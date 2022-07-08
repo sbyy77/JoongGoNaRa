@@ -3,7 +3,7 @@ const hideMenu = document.querySelector(".hideMenu");
 
 header.addEventListener("click", () => {
   console.log("test");
-  for(let i = 0; i < hica.length; i++){
+  for (let i = 0; i < hica.length; i++) {
     hica[i].classList.remove("on2");
   }
   if (hideMenu.classList.contains("on")) {
@@ -26,7 +26,6 @@ for (let i = 0; i < hica.length; i++) {
   });
 }
 
-
 // for (let i = 0; i < hica.length; i++) {
 //   hideMenuAll[i].addEventListener("click", () => {
 //     if (hica[i].classList.contains("on2")) {
@@ -47,8 +46,7 @@ for (let i = 0; i < hica.length; i++) {
 //   });
 // }
 
-
-"use strict";
+("use strict");
 
 const bannerBox = document.querySelector("#recentItemBox > ul");
 const bannerItem = document.querySelectorAll(".recentItems");
@@ -111,8 +109,6 @@ prevBtn.addEventListener("click", () => {
   }
 });
 
-
-
 const hotItem_rightBox = document.querySelectorAll(".hotItem_rightBox");
 const hotItem_hide = document.querySelectorAll(".hotItem_hide");
 
@@ -128,3 +124,21 @@ for (let i = 0; i < hotItem_rightBox.length; i++) {
 window.onload = () => {
   hotItem_rightBox[0].classList.add("on3");
 };
+
+let j = 0;
+let hot = setInterval(() => {
+  ++j;
+  if (j > 9) {
+    j = 0;
+  }
+  for (let k = 0; k < hotItem_rightBox.length; k++) {
+    hotItem_rightBox[k].classList.remove("on3");
+  }
+  hotItem_rightBox[j].classList.add("on3");
+}, 3000);
+
+for (j; j < hotItem_rightBox.length; j++) {
+  for (j; j < hotItem_rightBox.length; j++) {
+    hotItem_rightBox[j].classList.remove("on3");
+  }
+}
