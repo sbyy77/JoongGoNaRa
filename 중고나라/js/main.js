@@ -124,7 +124,6 @@ for (let i = 0; i < hotItem_rightBox.length; i++) {
 window.onload = () => {
   hotItem_rightBox[0].classList.add("on3");
 };
-
 let j = 0;
 let hot = setInterval(() => {
   ++j;
@@ -142,3 +141,4 @@ for (j; j < hotItem_rightBox.length; j++) {
     hotItem_rightBox[j].classList.remove("on3");
   }
 }
+
