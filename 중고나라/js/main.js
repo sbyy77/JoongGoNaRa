@@ -125,20 +125,20 @@ window.onload = () => {
   hotItem_rightBox[0].classList.add("on3");
 };
 
-let j = 0;
-let hot = setInterval(() => {
-  ++j;
-  if (j > 9) {
-    j = 0;
-  }
-  for (let k = 0; k < hotItem_rightBox.length; k++) {
-    hotItem_rightBox[k].classList.remove("on3");
-  }
-  hotItem_rightBox[j].classList.add("on3");
-}, 3000);
+// let j = 0;
+// let hot = setInterval(() => {
+//   ++j;
+//   if (j > 9) {
+//     j = 0;
+//   }
+//   for (let k = 0; k < hotItem_rightBox.length; k++) {
+//     hotItem_rightBox[k].classList.remove("on3");
+//   }
+//   hotItem_rightBox[j].classList.add("on3");
+// }, 3000);
 
-for (j; j < hotItem_rightBox.length; j++) {
-  for (j; j < hotItem_rightBox.length; j++) {
-    hotItem_rightBox[j].classList.remove("on3");
-  }
-}
+// for (j; j < hotItem_rightBox.length; j++) {
+//   for (j; j < hotItem_rightBox.length; j++) {
+//     hotItem_rightBox[j].classList.remove("on3");
+//   }
+// }
